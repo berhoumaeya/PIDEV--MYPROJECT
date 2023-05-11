@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherAdminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-7.0" prefHeight="420.0" prefWidth="1000.0" style="-fx-background-color: #111c40;">
+         <children>
+            <TableView fx:id="tableViewadmin" layoutX="202.0" layoutY="150.0" onMouseClicked="#selectid" prefHeight="238.0" prefWidth="784.0">
+               <columns>
+                  <TableColumn fx:id="id_admin" minWidth="0.0" prefWidth="116.0" text="ID Admin" />
+                  <TableColumn fx:id="id_user" minWidth="5.0" prefWidth="151.0" text="ID User" />
+                  <TableColumn fx:id="col_login" prefWidth="130.0" text="Login" />
+                  <TableColumn fx:id="col_pwd" prefWidth="198.0" text="Pwd" />
+                  <TableColumn fx:id="col_email" prefWidth="189.0" text="Email" />
+               </columns>
+            </TableView>
+            <Button fx:id="deleteButton" layoutX="55.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#deleteAdmin" prefHeight="31.0" prefWidth="82.0" styleClass="button-design" stylesheets="@design.css" text="Supprimer" textFill="WHITE" />
+            <TextArea fx:id="idadmin_txt" layoutX="24.0" layoutY="166.0" prefHeight="31.0" prefWidth="145.0">
+               <font>
+                  <Font size="9.0" />
+               </font></TextArea>
+            <Label layoutX="96.0" layoutY="8.0" prefHeight="53.0" prefWidth="687.0" text="                          List des administrateurs" textFill="#bdc2c8">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="93.0" fitWidth="74.0" layoutX="937.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="898.0" layoutY="68.0" mnemonicParsing="false" onAction="#seDeconnecter" onMouseClicked="#deleteUser" prefHeight="31.0" prefWidth="105.0" styleClass="button-design" stylesheets="@design.css" text="Se déconnecter" textFill="WHITE" />
+            <Button fx:id="home" layoutX="10.0" layoutY="369.0" mnemonicParsing="false" onAction="#menu" style="-fx-background-color: none;" textFill="#3600f8">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/back-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="PdfButton" layoutX="56.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#addPDF" prefHeight="31.0" prefWidth="82.0" styleClass="button-design" stylesheets="@design.css" text="PDF" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="rechercher" layoutX="26.0" layoutY="63.0" prefHeight="34.0" prefWidth="243.0" promptText="Rechercher..">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="235.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

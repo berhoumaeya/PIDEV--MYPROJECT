@@ -1,0 +1,111 @@
+{% extends 'base-front.html.twig' %}
+
+{% block title %}Welcome{% endblock %}
+
+
+{% block body %}
+<!-- Navbar & Carousel End -->
+	<!-- About Start -->
+				<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="container py-5">
+						<div class="row g-5">
+							<div class="col-lg-7">
+								<div class="section-title position-relative pb-3 mb-5">
+									<h5 class="fw-bold text-primary text-uppercase">À propos nous</h5>
+									<h1 class="mb-0">Le meilleur site pour réserver un événement</h1>
+								</div>
+								<p class="mb-4">Bienvenue sur notre site ACE ! 
+								Nous sommes heureux de vous offrir une plateforme en ligne pratique et conviviale
+								 pour réserver des événements qui se déroulent dans des endroits spécifiques. 
+								 Que vous cherchiez tout les types d'événements, notre site web est là pour faciliter 
+								 le processus de réservation. Notre objectif est de vous offrir une expérience de réservation 
+								 sans stress et de vous aider à trouver le lieu idéal pour votre événement. Nous espérons que vous 
+								 trouverez notre site utile et nous sommes impatients de vous aider à planifier votre prochain événement
+								  réussi !</p>
+								<div class="row g-0 mb-3">
+									<div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+										<h5 class="mb-3">
+											<i class="fa fa-check text-primary me-3"></i>Le seul site en tunisie</h5>
+										<h5 class="mb-3">
+											<i class="fa fa-check text-primary me-3"></i>Travail professionnel</h5>
+									</div>
+									<div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+										<h5 class="mb-3">
+											<i class="fa fa-check text-primary me-3"></i>Disponible 24/7 </h5>
+										<h5 class="mb-3">
+											<i class="fa fa-check text-primary me-3"></i>Prix raisonnable</h5>
+									</div>
+								</div>
+								<div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+									<div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+										<i class="fa fa-phone-alt text-white"></i>
+									</div>
+									<div class="ps-4">
+										<h5 class="mb-2">Appel nous sur</h5>
+										<h4 class="text-primary mb-0">+216 72 474 110</h4>
+									</div>
+									</div>
+							</div>
+								
+							<div class="col-lg-5" style="min-height: 500px;">
+								<div class="position-relative h-100">
+									<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{ asset('front-office/img/about.jpg') }}" style="object-fit: cover;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- About End -->
+
+
+	<!-- Features Start -->
+				<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="container py-5">
+						<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+							<h5 class="fw-bold text-primary text-uppercase">Pourquoi nous</h5>
+							<h1 class="mb-0">Nous sommes là pour vous faciliter votre vie</h1>
+						</div>
+						<div class="row g-5">
+							<div class="col-lg-4">
+								<div class="row g-5">
+									<div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+										<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+											<i class="fa fa-cubes text-white"></i>
+										</div>
+										<h4> Le Meilleur en tunisie</h4>
+									</div>
+									<div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+										<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+											<i class="fa fa-award text-white"></i>
+										</div>
+										<h4>Site web Simple</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+								<div class="position-relative h-100">
+									<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="{{ asset('front-office/img/feature.jpg') }}" style="object-fit: cover;">
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="row g-5">
+									<div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+										<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+											<i class="fa fa-users-cog text-white"></i>
+										</div>
+										<h4>Contient tout les Evenement</h4>
+									</div>
+									<div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+										<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+											<i class="fa fa-phone-alt text-white"></i>
+										</div>
+										<h4>Disponible partout</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Features Start -->
+
+{% endblock %}

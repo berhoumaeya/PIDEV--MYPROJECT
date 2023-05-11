@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111c40;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddpubController">
+   <children>
+      <Label layoutX="125.0" layoutY="24.0" prefHeight="53.0" prefWidth="376.0" text="Ajouter une publicite" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Bloom>
+               <input>
+                  <Blend />
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
+      <Button layoutX="432.0" layoutY="233.0" mnemonicParsing="false" onAction="#addpub" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #70cdc3;" styleClass="button-design" stylesheets="@des.css" text="Ajouter" textFill="WHITE" />
+      <Button layoutX="530.0" layoutY="361.0" mnemonicParsing="false" onAction="#backhome" prefHeight="17.0" prefWidth="56.0" styleClass="button-design" stylesheets="@des.css" text="home" textFill="WHITE" />
+      <ImageView fitHeight="56.0" fitWidth="75.0" layoutX="519.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@324634301_5783487298438148_1603310201742560202_n%20(1).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeltype" layoutX="164.0" layoutY="154.0" text="Le type" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttype" layoutX="275.0" layoutY="148.0" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: white;" styleClass="button-design" stylesheets="@des.css" />
+      <Button fx:id="seDeconnecter" layoutX="466.0" layoutY="78.0" mnemonicParsing="false" onAction="#seDeconnecter" onMouseClicked="#deleteUser" prefHeight="31.0" prefWidth="105.0" styleClass="button-design" stylesheets="@design.css" text="Se déconnecter" textFill="WHITE" />
+   </children>
+</AnchorPane>

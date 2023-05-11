@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111c40;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RegisterUserController">
+   <children>
+      <Button fx:id="RegisterButton" layoutX="182.0" layoutY="350.0" mnemonicParsing="false" onAction="#register" prefHeight="36.0" prefWidth="102.0" styleClass="button-design" stylesheets="@design.css" text="Register" textFill="WHITE" />
+      <VBox layoutX="111.0" layoutY="22.0" prefHeight="325.0" prefWidth="178.0" spacing="35.0">
+         <children>
+            <Label text="User name" textFill="WHITE" />
+            <Label text="Password" textFill="WHITE" />
+            <Label text="Email" textFill="WHITE" />
+            <Label text="Login" textFill="WHITE" />
+            <Label text="Number User" textFill="WHITE" />
+            <Label prefWidth="185.0" text="Address User" textFill="WHITE" />
+            <Label prefWidth="185.0" text="Role" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox layoutX="298.0" layoutY="27.0" prefHeight="346.0" prefWidth="227.0">
+         <children>
+            <TextField fx:id="tf_username" onKeyReleased="#nomControl" prefHeight="27.0" prefWidth="176.0" promptText="saisir le nom d'utilisateur" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="nomcontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="td_pwd" onKeyReleased="#pwdControl" prefHeight="27.0" prefWidth="176.0" promptText="votre password" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="pwdcontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="tf_email" onKeyReleased="#emailControl" prefHeight="27.0" prefWidth="176.0" promptText="votre email" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="emailcontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="tf_login" onKeyReleased="#loginControl" prefHeight="27.0" prefWidth="176.0" promptText="votre login" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="logincontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="tf_number" onKeyReleased="#numControl" prefHeight="27.0" prefWidth="176.0" promptText=" votre numéro de télèphone" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="numcontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="tf_address" onKeyReleased="#addressControl" prefHeight="27.0" prefWidth="176.0" promptText="votre address" styleClass="textfield2-design" stylesheets="@design.css" />
+            <Label fx:id="addresscontrol" prefHeight="24.0" prefWidth="185.0" textFill="#ff3434" />
+            <TextField fx:id="tf_role" prefHeight="27.0" prefWidth="176.0" promptText="votre address" style="-fx-background-color: white;" styleClass="textfield-design" stylesheets="@design.css" text="User" />
+         </children>
+      </VBox>
+      <Button fx:id="exit" layoutX="564.0" layoutY="348.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: none;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="561.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

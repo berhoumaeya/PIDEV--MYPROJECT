@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Choisir_loginController">
+   <children>
+      <Label prefHeight="411.0" prefWidth="302.0" style="-fx-background-color: #517ab5;" />
+      <Label layoutX="302.0" prefHeight="411.0" prefWidth="302.0" style="-fx-background-color: #416eab;" textFill="#3c75bf" />
+      <Label layoutX="301.0" prefHeight="411.0" prefWidth="5.0" style="-fx-background-color: white;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="58.0" layoutX="546.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="l_admin" layoutX="340.0" layoutY="131.0" mnemonicParsing="false" onAction="#log_admin" prefHeight="51.0" prefWidth="229.0" style="-fx-background-color: none;" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="l_user" layoutX="70.0" layoutY="131.0" mnemonicParsing="false" onAction="#log_user" prefHeight="51.0" prefWidth="170.0" style="-fx-background-color: none;" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/login.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="363.0" layoutY="315.0" text="Administrateur" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="315.0" text="Utilisateur" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111c40;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PromAjoutController">
+   <children>
+      <Pane layoutX="21.0" layoutY="88.0" prefHeight="221.0" prefWidth="277.0" style="-fx-background-color: #fdfdfd;">
+         <children>
+            <Label fx:id="idclient" layoutX="14.0" layoutY="69.0" text="IdProm" />
+            <Label fx:id="idevent" layoutX="13.0" layoutY="122.0" text="IdClient" />
+            <Label fx:id="qte" layoutX="7.0" layoutY="168.0" text="Remise" />
+            <TextField fx:id="txtidprom" layoutX="98.0" layoutY="65.0" styleClass="textfield-design" stylesheets="@design.css" />
+            <TextField fx:id="txtidclient" layoutX="98.0" layoutY="117.0" styleClass="textfield-design" stylesheets="@design.css" />
+            <TextField fx:id="txtremise" layoutX="98.0" layoutY="164.0" styleClass="textfield-design" stylesheets="@design.css" />
+            <Label fx:id="remplissez" layoutX="34.0" layoutY="14.0" prefHeight="25.0" prefWidth="220.0" text="Remplissez les champs !" textAlignment="CENTER" textFill="#3872c9" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </Pane>
+      <Button id="btnajouter" layoutX="347.0" layoutY="339.0" mnemonicParsing="false" onAction="#createPromotion" prefHeight="29.0" prefWidth="57.0" styleClass="button-design" stylesheets="@design.css" text="Add" textFill="WHITE" underline="true">
+         <font>
+             
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="219.0" layoutY="14.0" prefHeight="53.0" prefWidth="230.0" text="Promotion" textFill="#bdc2c8">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <ImageView fitHeight="177.0" fitWidth="230.0" layoutX="347.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@324634301_5783487298438148_1603310201742560202_n%20(1)_1.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Button fx:id="home" layoutX="14.0" layoutY="376.0" mnemonicParsing="false" onAction="#menu" style="-fx-background-color: none;" textFill="#3600f8">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/back-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

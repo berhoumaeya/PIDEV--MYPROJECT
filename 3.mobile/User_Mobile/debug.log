@@ -1,0 +1,5 @@
+[0508/113647.816:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 31
+[0508/113647.817:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 33
+[0508/113656.491:INFO:CONSOLE(242)] "%c%s color: red; background: yellow; font-size: 24px; WARNING!", source: https://www.gstatic.com/_/mss/boq-devplatform/_/js/k=boq-devplatform.DurableDeepLinkUi.en_US.QwqezNAy1NM.es5.O/am=gHMGAAg/d=1/excm=_b,_r,_tp,viewddl/ed=1/dg=0/wt=2/ujg=1/rs=ADpVLP7UiC9UCnK-pxCt-jt0j0ZT_QNzuw/m=_b,_tp,_r (242)
+[0508/113656.492:INFO:CONSOLE(242)] "%c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.", source: https://www.gstatic.com/_/mss/boq-devplatform/_/js/k=boq-devplatform.DurableDeepLinkUi.en_US.QwqezNAy1NM.es5.O/am=gHMGAAg/d=1/excm=_b,_r,_tp,viewddl/ed=1/dg=0/wt=2/ujg=1/rs=ADpVLP7UiC9UCnK-pxCt-jt0j0ZT_QNzuw/m=_b,_tp,_r (242)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111c40;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SupprimerController">
+   <children>
+      <Button layoutX="300.0" layoutY="226.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="35.0" prefWidth="75.0" text="Supprimer" />
+      <Label layoutX="82.0" layoutY="15.0" text="Supprimer un Evenemeent" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Blend />
+               </bumpInput>
+               <light>
+                 
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="503.0" layoutY="345.0" mnemonicParsing="false" onAction="#backbtn" text="back home" />
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="525.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@324634301_5783487298438148_1603310201742560202_n%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtsupprimer" layoutX="68.0" layoutY="175.0" />
+      <Label fx:id="labelsupprimer" layoutX="24.0" layoutY="103.0" prefHeight="20.0" prefWidth="193.0" text="-Entrez votre id a supprimer:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="seDeconnecter" layoutX="458.0" layoutY="81.0" mnemonicParsing="false" onAction="#seDeconnecter" onMouseClicked="#deleteUser" prefHeight="31.0" prefWidth="105.0" styleClass="button-design" stylesheets="@design.css" text="Se déconnecter" textFill="WHITE" />
+   </children>
+</AnchorPane>

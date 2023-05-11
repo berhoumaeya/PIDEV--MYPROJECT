@@ -1,0 +1,27 @@
+création de nouveau projet :
+symfony new utilisateur --version=5.4 –webapp
+--------------------------------------------------
+ajout contrôleur :
+php bin/console make:controller TeacherController
+-------------------------------------------------
+lancer projet :
+symfony server:start
+------------------------------------------------
+Création d'une classe d'entité :
+php bin/console make:entity
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+------------------------------------------------
+création de BD :
+php bin/console doctrine:database:create
+------------------------------------------------
+création entite user :
+php bin/console make:user
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+------------------------------------------------
+apres modification :
+php bin/console doctrine:schema:update --force
+------------------------------------------------
+la version de la dépendance Doctrine/ORM utilisée dans votre projet :
+Dans le fichier composer.json du projet : composer show

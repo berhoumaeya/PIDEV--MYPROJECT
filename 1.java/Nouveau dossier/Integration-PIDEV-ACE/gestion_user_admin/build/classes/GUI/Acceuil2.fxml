@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="1000.0" style="-fx-background-color: #111c40;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Accueil2Controller">
+   <children>
+      <ImageView fitHeight="268.0" fitWidth="318.0" layoutX="64.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="978.0" layoutY="18.0" mnemonicParsing="false" onAction="#seDeconnecter" onMouseClicked="#deleteUser" prefHeight="31.0" prefWidth="105.0" styleClass="button-design" stylesheets="@design.css" text="Se déconnecter" textFill="WHITE" />
+      <Button fx:id="home" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#menu" prefHeight="50.0" prefWidth="49.0" style="-fx-background-color: none;" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnR2" layoutX="481.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnaffr" prefHeight="31.0" prefWidth="596.0" style="-fx-background-color: none;" text="Afficher Reservation" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnR3" layoutX="468.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnsupr" prefHeight="22.0" prefWidth="635.0" style="-fx-background-color: none;" text="Supprimer Reservation" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnR1" layoutX="487.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnajr" prefHeight="31.0" prefWidth="596.0" style="-fx-background-color: none;" text="Ajouter Reservation" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnR4" layoutX="473.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnmodr" prefHeight="50.0" prefWidth="635.0" style="-fx-background-color: none;" text="Modifier Reservation" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP1" layoutX="154.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnajp" prefHeight="31.0" prefWidth="596.0" style="-fx-background-color: none;" text="Ajouter Promotion" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP2" layoutX="154.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnaffp" prefHeight="31.0" prefWidth="596.0" style="-fx-background-color: none;" text="Afficher Promotion" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP3" layoutX="135.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnsupp" prefHeight="22.0" prefWidth="635.0" style="-fx-background-color: none;" text="Supprimer Promotion" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP4" layoutX="144.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnmodp" prefHeight="50.0" prefWidth="635.0" style="-fx-background-color: none;" text="Modifier Promotion" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
